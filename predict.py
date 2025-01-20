@@ -7,6 +7,7 @@ import numpy as np
 import sys
 from contextlib import redirect_stdout
 from time import time
+import os
 
 from torch.serialization import add_safe_globals
 from torch.nn.modules.container import Sequential
@@ -80,12 +81,32 @@ def input_validation(args):
 
     return checkpoint_path, model, path, categories, topk, device
 
+# function to load large model checkpoint file split into multiple files
+def load_split_checkpoint(base_path):
+    checkpoint = {}
+    chunk_id = 0
+    while True:
+        chunk_path = f"{base_path}.part{chunk_id}"
+        if not os.path.exists(chunk_path):
+            break
+        with open(chunk_path, 'rb') as f:
+            chunk_data = torch.load(f, weights_only=True)
+            checkpoint.update(chunk_data)
+        chunk_id += 1
+
+    return checkpoint
+
+
 
 def get_checkpoint(path, model):
     # Add Sequential to safe globals before loading checkpoint
     add_safe_globals([Sequential, Linear, set, ReLU, Dropout, LogSoftmax, NLLLoss])
 
-    checkpoint = torch.load(path, weights_only=True)
+    # Load split checkpoint
+    if os.path.exists(f"{path}.part0"):
+        checkpoint = load_split_checkpoint(path)
+    else:
+        checkpoint = torch.load(path, weights_only=True)
 
 
     for param in model.parameters():
