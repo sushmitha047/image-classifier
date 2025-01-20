@@ -1,0 +1,49 @@
+CNN Architecture: densenet
+
+Learning Rate: 0.003
+
+Hidden Units: 512,256
+
+Epochs: 10
+
+Device == GPU: True
+
+
+Epoch: 1/10..  Training Loss: 3.553..  Validation Loss: 1.850..  Validation Accuracy: 0.488
+Epoch: 2/10..  Training Loss: 1.915..  Validation Loss: 1.077..  Validation Accuracy: 0.691
+Epoch: 3/10..  Training Loss: 1.459..  Validation Loss: 0.836..  Validation Accuracy: 0.751
+Epoch: 4/10..  Training Loss: 1.244..  Validation Loss: 0.630..  Validation Accuracy: 0.816
+Epoch: 5/10..  Training Loss: 1.185..  Validation Loss: 0.534..  Validation Accuracy: 0.854
+Epoch: 6/10..  Training Loss: 1.068..  Validation Loss: 0.492..  Validation Accuracy: 0.859
+Epoch: 7/10..  Training Loss: 1.003..  Validation Loss: 0.537..  Validation Accuracy: 0.859
+Epoch: 8/10..  Training Loss: 0.934..  Validation Loss: 0.498..  Validation Accuracy: 0.852
+Epoch: 9/10..  Training Loss: 0.935..  Validation Loss: 0.498..  Validation Accuracy: 0.853
+Epoch: 10/10..  Training Loss: 0.907..  Validation Loss: 0.422..  Validation Accuracy: 0.879
+
+** Total Elapsed Runtime: 0:8:35
+--------------------------------------------------------------------------------------------
+
+CNN Architecture: vgg
+
+Learning Rate: 0.003
+
+Hidden Units: 4096
+
+Epochs: 10
+
+Device == GPU: True
+
+
+Epoch: 1/10..  Training Loss: 7.245..  Validation Loss: 1.323..  Validation Accuracy: 0.644
+Epoch: 2/10..  Training Loss: 2.045..  Validation Loss: 1.170..  Validation Accuracy: 0.688
+Epoch: 3/10..  Training Loss: 1.842..  Validation Loss: 1.092..  Validation Accuracy: 0.724
+Epoch: 4/10..  Training Loss: 1.723..  Validation Loss: 0.951..  Validation Accuracy: 0.765
+Epoch: 5/10..  Training Loss: 1.703..  Validation Loss: 0.990..  Validation Accuracy: 0.757
+Epoch: 6/10..  Training Loss: 1.635..  Validation Loss: 0.875..  Validation Accuracy: 0.783
+Epoch: 7/10..  Training Loss: 1.586..  Validation Loss: 0.902..  Validation Accuracy: 0.778
+Epoch: 8/10..  Training Loss: 1.598..  Validation Loss: 0.933..  Validation Accuracy: 0.787
+Epoch: 9/10..  Training Loss: 1.567..  Validation Loss: 0.913..  Validation Accuracy: 0.790
+Epoch: 10/10..  Training Loss: 1.514..  Validation Loss: 0.926..  Validation Accuracy: 0.786
+
+** Total Elapsed Runtime: 0:11:39
+--------------------------------------------------------------------------------------------

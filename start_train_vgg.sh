@@ -1,0 +1,1 @@
+python train.py --arch vgg --rate 0.003 --hiddenUnits 4096 --epochs 10 --gpu True
