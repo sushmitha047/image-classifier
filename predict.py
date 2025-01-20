@@ -8,7 +8,6 @@ import sys
 from contextlib import redirect_stdout
 from time import time
 import os
-
 from torch.serialization import add_safe_globals
 from torch.nn.modules.container import Sequential
 from torch.nn.modules.linear import Linear
