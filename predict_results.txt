@@ -1,0 +1,35 @@
+CNN Architecture: densenet
+
+Image path : flower_data/test/16/image_06657.jpg
+
+Flower Categories: cat_to_name.json
+
+Top K predictions: 4
+
+Device == GPU: True
+
+
+Top probabilities: [0.9586572  0.01192297 0.01189401 0.01040363] 
+Top classes: ['16', '48', '90', '42'] 
+Top classes' names: ['globe-flower', 'buttercup', 'canna lily', 'daffodil'] 
+
+** Total Elapsed Runtime: 0:0:0
+--------------------------------------------------------------------------------------------
+
+CNN Architecture: vgg
+
+Image path : flower_data/test/10/image_07090.jpg
+
+Flower Categories: cat_to_name.json
+
+Top K predictions: 4
+
+Device == GPU: True
+
+
+Top probabilities: [9.9999976e-01 2.1534578e-07 3.3708192e-09 1.0504858e-09] 
+Top classes: ['10', '50', '22', '29'] 
+Top classes' names: ['globe thistle', 'common dandelion', 'pincushion flower', 'artichoke'] 
+
+** Total Elapsed Runtime: 0:0:1
+--------------------------------------------------------------------------------------------
