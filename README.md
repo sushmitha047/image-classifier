@@ -59,7 +59,7 @@ Options:
  - Both architectures are fine-tuned for the specific task of flower classification.
 
 ## Dataset
- - The model is trained on a dataset of 102 flower categories (link)[http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html]. The data is split into:
+ - The model is trained on a dataset of [102 flower categories](http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html). The data is split into:
  - Training set: Used for model training
  - Validation set: Used for hyperparameter tuning
  - Test set: Used for final model evaluation
@@ -85,8 +85,8 @@ Prediction Examples:
  - This analysis shows that DenseNet121 provides the best balance of accuracy, training time, and model complexity for this flower classification task.
 
 ## Acknowledgments
-AWS AI/ML Scholarship Program
-Udacity
+ - AWS AI/ML Scholarship Program
+ - Udacity
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
